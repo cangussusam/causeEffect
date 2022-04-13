@@ -13,7 +13,142 @@
 </head>
 <body>
     
+    <header class="header">
+        <h1 class="header__title">Cause Effect</h1>
+    </header>
 
+    <section class="results">
+        <aside class="list">
+            <ul class="list__ul">
+            </ul>
+        </aside>
 
+        <div class="output">
+
+            <table class="output__table" id="table">
+                <tr class="output__tr">
+                    <td class="output__td">Nome</td>
+                    <td class="output__td" id="name__output"></td>
+                </tr>
+                <tr class="output__tr">
+                    <td class="output__td">CEP</td>
+                    <td class="output__td" id="zip__output"></td>
+                </tr>
+                <tr class="output__tr">
+                    <td class="output__td">Rua</td>
+                    <td class="output__td" id="street__output"></td>
+                </tr>
+                <tr class="output__tr">
+                    <td class="output__td">Cidade</td>
+                    <td class="output__td" id="city__output"></td>
+                </tr>
+                <tr class="output__tr">
+                    <td class="output__td">Estado</td>
+                    <td class="output__td" id="state__output"></td>
+                </tr>
+                <tr class="output__tr">
+                    <td class="output__td">País</td>
+                    <td class="output__td" id="country__output"></td>
+                </tr>
+                <tr class="output__tr">
+                    <td class="output__td">Telefone </td>
+                    <td class="output__td" id="phone__output"></td>
+                </tr>
+                <tr class="output__tr">
+                    <td class="output__td">Aniversário</td>
+                    <td class="output__td" id="bday__output"></td>
+                </tr>
+                <tr class="output__tr">
+                    <td class="output__td">E-mail</td>
+                    <td class="output__td" id="email__output"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <main>
+       
+
+        <div class="container">
+
+            <h1 class="form__title">Cadastro</h1>
+
+            <form class="form" id="data__form">
+                <div class="form__div">
+                    <label class="form__label">Nome</label>
+                    <input type="text" class="form__input" id="name__form"  
+                    data-type="name" placeholder="Nome Sobrenome"required> <br>
+                    <span class="error__mensage"></span>
+                </div>
+                <div class="form__div">
+                    <label class="form__label">CEP</label>
+                    <input type="text" class="form__input" id="zip__form"  
+                        data-type="zip" placeholder="12345-678"required pattern="[\d]{5}-?[\d]{3}"><br>
+                    <span class="error__mensage"></span>
+                </div>
+                <div class="form__div">
+                    <label class="form__label">Rua</label>
+                    <input type="text" class="form__input" id="street__form"  
+                        data-type="street" placeholder="Rua Santos Dumont"required><br>
+                    <span class="error__mensage"></span>
+                </div>
+                <div class="form__div">
+                    <label class="form__label">Cidade</label>
+                    <input type="text" class="form__input" id="city__form"  
+                        data-type="city" placeholder="Salvador"required><br>
+                    <span class="error__mensage"></span>
+                </div>
+                <div class="form__div">
+                    <label class="form__label">Estado</label>
+                    <input type="text" class="form__input" id="state__form"  
+                        data-type="state" placeholder="BA"required><br>
+                    <span class="error__mensage"></span>
+                </div>
+                <div class="form__div">
+                    <label class="form__label">País</label>
+                    <input list="countries" class="form__input" id="country__form"  
+                        data-type="country" placeholder="Brasil"required><br>
+                    <datalist id="countries"></datalist>
+                    <span class="error__mensage"></span>
+                </div>
+                <div class="form__div">
+                    <label class="form__label">Telefone</label>
+                    <input type="tel" class="form__input" id="phone__form"  
+                        data-type="phone" placeholder="11 91111-2345"required pattern="[\d]{2}\s?[\d]{5}-?[\d]{4}"><br>
+                    <span class="error__mensage"></span>
+                </div>
+                <div class="form__div">
+                    <label class="form__label">Aniversário</label>
+                    <input type="date" class="form__input" id="bday__form"  
+                        data-type="bday" placeholder="15/01/2000"required><br>
+                    <span class="error__mensage"></span>
+                </div>
+                <div class="form__div">
+                    <label class="form__label">E-mail</label>
+                    <input type="email" class="form__input" id="email__form" 
+                        data-type="email" placeholder="email@dominio.com"required><br>
+                    <span class="error__mensage"></span>
+                </div>
+
+            </form>
+
+            <div class="submit">
+                <button class="submit__button" form="data__form">Adicionar Cadastro</button>
+            </div>
+
+        </div>
+
+        <div class="error__div" id="error"></div>
+        
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/app/Person.js"></script>
+    <script src="scripts/app/ViewPerson.js"></script>
+    <script src="scripts/app/getCountries.js"></script>
+    <script src="scripts/app/formVerification.js"></script>
 </body>
 </html>

@@ -1,3 +1,126 @@
 body{
     font-family: 'Arvo', serif;
 }
+
+.header{
+    background: black;
+}
+
+.header__title{
+    padding: 1.25rem;
+    font-size: 2rem;
+    color: #fdfdfd;
+    margin-left: 5%;
+}
+
+
+.results{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.list{
+    border: 1px solid grey;
+    margin: 2rem;
+    width: 15%;
+    height: 200px;
+    padding: 1rem;
+
+
+}
+
+.list__li{
+    margin: 0.5rem 0;
+    color: #48A9A6;
+}
+
+.list__li:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.output{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    margin-right: 22.5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.output__table{
+    display: none;
+}
+
+.output__td{
+    border: 1px solid grey;
+    padding: 0.25rem;
+    margin-right: 10px;
+}
+
+.container{
+    margin: 1.5rem 0;
+}
+
+.form{
+    display: flex;
+    margin: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 2rem;
+    color: #48A9A6;
+    margin-top: 2rem;
+}
+
+.form__div{
+    text-align: center;
+}
+
+.form__label{
+    margin: 1rem 40% 0.25rem 0;
+    display: block;
+    font-size: 1.15rem;
+    font-style: italic;
+}
+
+.form__input{
+    width: 50%;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.error__mensage{
+    color: #EF233C;
+
+}
+
+.submit{
+    text-align: center;
+}
+
+.submit__button{
+    padding: 1.5rem;
+    font-size: 1rem;
+    background-color: #48A9A6;
+    color: #fdfdfd;
+    margin-bottom: 1.5rem;
+}
+
+.submit__button:hover{
+    cursor: pointer;
+    background-color: #2A827F;
+}
+
+.footer{
+    background: black;
+    height: 4rem;
+}
